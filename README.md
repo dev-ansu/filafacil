@@ -18,7 +18,7 @@
 - Bootstrap: Framework CSS usado para criar uma interface responsiva e moderna.
 
 ## Requisitos
-PHP 7.4 ou superior
+PHP 8.2 ou superior
 Servidor web (Apache)
 Banco de dados MySQL
 
