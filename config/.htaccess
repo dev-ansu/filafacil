@@ -1,0 +1,9 @@
+<Files config.php>
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+<Directory config>
+    Order Allow,Deny
+    Deny from all
+</Directory>

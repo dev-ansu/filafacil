@@ -1,0 +1,34 @@
+{
+    "name": "anderson/bancos_de_dados",
+    "autoload": {
+        "psr-4": {
+            "Anderson\\BancosDeDados\\": "src/",
+            "app\\":"app"
+        },
+        "files":[
+            "app/helpers/flash.php",
+            "app/helpers/Components/Table.php",
+            "app/helpers/Components/Buttons.php",
+            "app/helpers/redirectToLogin.php",
+            "app/helpers/backToPage.php",
+            "app/helpers/setTipoAluno.php",
+            "app/helpers/encryptID.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Anderson Souza"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.5",
+        "cboden/ratchet": "^0.4.4",
+        "ext-gd": "*",
+        "phpoffice/phpspreadsheet": "^1.29",
+        "scrivo/highlight.php": "v9.18.1.10",
+        "symfony/browser-kit": "^6.4",
+        "symfony/finder": "^6.4",
+        "symfony/http-client": "^6.4",
+        "symfony/mime": "^6.4"
+    }
+}

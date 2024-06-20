@@ -1,0 +1,46 @@
+#container_show_pass{
+    height: 100vh;
+    max-height: 100vh;
+    background-color: var(--purple-semi-dark);
+}
+
+#actual_pass_container{
+    max-width: 100%;
+}
+
+#actual_pass_container > div{
+    max-width: 100%;
+    overflow: auto;
+}
+
+#previous_pass_container{
+    background-color: var(--purple-semi-light);
+    overflow-x:auto;
+    overflow-y:hidden;
+    max-width: 100%;
+}
+
+#actual_pass{
+    font-size: 16rem;
+    color:rgb(226, 185, 0);
+}
+#actual_guiche{
+    font-size:  4rem;
+}
+.card_previous_pass{
+    max-width: 300px !important;
+    min-width: 280px !important;
+}
+
+#mensagem-informacional{
+    position: absolute;
+    right:20px;
+    overflow-x: hidden;
+    top:10px;
+    z-index: 99999;
+    transition: all 0.6s ease-in-out;
+}
+
+#mensagem-informacional .alert{
+    animation: alertShow 0.3s forwards ease;
+}

@@ -1,0 +1,31 @@
+Options -Indexes
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php/$1 [L]
+RewriteRule ^app/ - [F]
+RewriteRule ^config/ - [F]
+RewriteRule ^vendor/ - [F]
+Header set X-XSS-Protection "1; mode=block"
+Header set X-Content-Type-Options "nosniff"
+
+
+<IfModule mod_deflate.c>
+    <FilesMatch "\.(html|css|js|xml|json|txt|php)$">
+        SetOutputFilter DEFLATE
+    </FilesMatch>
+</IfModule>
+
+
+<FilesMatch "(config|\.json|\.env|\.lock)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<LimitExcept GET POST>
+    Deny from all
+</LimitExcept>
+
+

@@ -1,0 +1,33 @@
+@keyframes alertShow{
+    from{
+        transform: translate(45px);
+    }
+    to{
+        transform: translate(0px);
+    }
+}
+
+#mensagem-informacional{
+    position: absolute;
+    right:20px;
+    overflow-x: hidden;
+    top:10px;
+    z-index: 99999;
+    transition: all 0.6s ease-in-out;
+}
+
+#mensagem-informacional .alert{
+    animation: alertShow 0.3s forwards ease;
+}
+
+.tempo-decorrido{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    font-size: 12px !important;
+    width:0px;
+    min-height: 12px;
+    transition: all 1s ease-out;
+    width: 100%;
+    color:#fff;
+}
