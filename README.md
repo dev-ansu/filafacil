@@ -63,7 +63,7 @@ Configurações: permite bloquear acessos a certas partes do sistema de um cargo
 
 ## IMAGENS DO PROJETO
 
-<img width="500" src="./assets/image1.png">
-<img width="500" src="./assets/image2.png">
-<img width="500" src="./assets/image3.png">
-<img width="500" src="./assets/image4.png">
+<img width="500" src="./assets/img/image1.png">
+<img width="500" src="./assets/img/image2.png">
+<img width="500" src="./assets/img/image3.png">
+<img width="500" src="./assets/img/image4.png">
