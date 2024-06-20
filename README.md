@@ -36,10 +36,11 @@ cd filafacil
 Configure o arquivo config.php com as informações do seu banco de dados:
 
 ```
-define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'seu-usuario');
-define('DB_PASSWORD', 'sua-senha');
-define('DB_NAME', 'nome-do-banco-de-dados');
+define("HOST", "localhost");
+define("DBNAME", "filafacil");
+define("USER", "root");
+define("PASS", "");
+define("PORT", "");
 ```
 
 Crie um banco de dados chamado "filafacil"
